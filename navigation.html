@@ -1,0 +1,28 @@
+<div class="menuBar">
+	 <img src="./assets/img/logo.png" class="Logo" alt="Ufo Linux Logo" >
+	 <input value="&#9776;" type="text" class="menuIcon" id="menuIcon" onclick="pull()" onblur="dump()" readonly>
+		 <div class="Snav" id="Snav">
+			 <a href="#home" class="nav"> Home </a>
+			 <a href="#about" class="nav"> About </a>
+			 <a href="#contributors" class="nav"> Contributers </a>
+			 <a href="#download" class="nav"> Download</a>
+			 <a href="mirrorlist/index.html" class="nav"> Mirror List </a><hr>
+			 <font class="nav" id="contact"> Contact Us</font>
+			 <div class="container-contact" id="container-contact">
+				 <a class="navC" target="_blank" rel="noopener noreferrer" href="http://github.com/ufolinux"><i class="bi bi-github"> </i></a>
+				 <a class="navC" target="_blank" rel="noopener noreferrer" href="http://gitlab.com/ufolinux"><i class="fa fa-gitlab"> </i></a>
+				 <a class="navC" target="_blank" rel="noopener noreferrer" href="http://t.me/ufolinux"><i class="bi bi-telegram"> </i></a>
+				 <a class="navC" target="_blank" rel="noopener noreferrer" href="https://matrix.to/#/#ufolinux:matrix.org"><i class="bi bi-mastodon"></i></a>
+			 </div>
+		 </div>
+</div>
+
+<script>
+var sn = document.getElementById("Snav");
+function dump(){
+sn.style.left = "-120%";
+}
+function pull(){
+sn.style.left = "0";
+}
+</script>
