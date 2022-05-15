@@ -44,7 +44,7 @@ body{
 			display:inline-block;
 			position:absolute;
 		    height:40px;
-		    color:red;
+		    color:white;
 		    font-size:2rem;
 		    font-stretch:ultra-expanded;
 		    transition:0.2s;
@@ -371,7 +371,7 @@ hr{
 		animation:float1 1.5s linear infinite alternate-reverse;
 	}
 	.top-right{
-		top:20%;
+		top:30%;
 		right:5%;
 		animation:float2 1.2s linear infinite alternate-reverse;
 	}
@@ -380,6 +380,6 @@ hr{
 			to{top:11%;}
 		}
 		@keyframes float2{
-			from{top:20%;}
+			from{top:30%;}
 			to{right:7%;}
 		}
