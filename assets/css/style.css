@@ -64,7 +64,7 @@ body{
     width:100vw;
     top:7vh;
     left:-120%;
-    padding:20vh 0 2vh 0;
+    padding:10vh 0 2vh 0;
     text-align:center;
     transition:0.3s;
     z-index:98;
@@ -230,10 +230,11 @@ a{
 		text-decoration:none;
 	}
 hr{
-	border-top:5px solid pink;
+	border-top:5px solid grey;
 	border-bottom:none;
 	border-right:none;
 	border-left:none;
+	width:90vw;
 }
 .blockA{
 	display:block;
@@ -280,15 +281,105 @@ hr{
 
 	}
 .blockA p{
-	letter-spacing:0.1rem;
-}
-.blockA p a{
-	color:#9e0f05;
-	text-decoration:none;
-}
+		letter-spacing:0.1rem;
+	}
+	.blockA p a{
+		color:#9e0f05;
+		text-decoration:none;
+	}
 .blockA hr{
 		width:20vw;
 		border:2px solid #9e0f05;
 		border-bottom:none;
 		margin-top:0.2rem;
 	}
+.blockE{
+	display:block;
+	text-align:left;
+	color:white;
+	margin:10vh 3vw;
+}
+	.blockE hr{
+		border-top:2px solid #9e0f05;
+	}
+	.blockE .m-a{
+		display:flex;
+		white-space: nowrap;
+		letter-spacing:0.1rem;
+		overflow-x:scroll;
+		background:silver;
+		padding:1rem 0.7rem;
+		margin:0.5rem;
+		font-size:0.8rem;
+		font-family:Courier new,monospace;
+		color:black;
+	}
+	.blockE .m-a::selection {
+	  color: white;
+	  background: lightblue;
+	  font-weight:700;
+	}
+	.blockE m-a::-webkit-scrollbar{
+		width: 2rem;
+		height: 2rem;
+		background-color: grey; 
+	}
+	.blockE .m-a::-webkit-scrollbar-thumb{
+		background-color: orange;
+	}
+.blockD{
+	display:block;
+	text-align:left;
+	color:white;
+	margin:10vh 3vw;
+}
+	.blockD h2{
+		font-size:2.5rem;
+	}
+	.blockD hr{
+		border-top:2px solid #9e0f05;
+	}
+	.blockD a{
+		color:#9e0f05;
+		text-decoration:none;
+	}
+	.blockD .d-a{
+		letter-spacing:0.05rem;
+		line-height:1.5rem;
+	}
+	.blockD button{
+		display:block;
+		padding:0.7rem;
+		border:none;
+		outline:none;
+		border-radius:15px;
+		text-align:center;
+		font-size:1.1rem;
+		margin-top:1.2vh;
+	}
+.particle{
+	display:block;
+	position:absolute;
+	height:2.5vh;
+	width:5vw;
+	background:darkred;
+	border-radius:0.5rem;
+}
+	.top-left{
+		top:10%;
+		left:15%;
+		animation:float1 1.5s linear infinite alternate-reverse;
+	}
+	.top-right{
+		top:20%;
+		right:5%;
+		animation:float2 1.2s linear infinite alternate-reverse;
+	}
+		@keyframes float1{
+			from{top:10%;}
+			to{top:11%;}
+		}
+		@keyframes float2{
+			from{top:20%;}
+			to{right:7%;}
+		}
