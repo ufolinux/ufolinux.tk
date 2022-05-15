@@ -1,7 +1,15 @@
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
-
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});
+$.get("head.html", function(data){
+    $("#head-placeholder").replaceWith(data);
+});
+$.get('head.html', function (response) {
+        $('#head-placeholder').html(response);
+    });
 document.body.addEventListener("scroll", function(event) {
   var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
   var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
