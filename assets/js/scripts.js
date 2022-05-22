@@ -1,3 +1,4 @@
+//Loading data files
 console.log("loading...");
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
@@ -11,7 +12,9 @@ $.get("head.html", function(data){
 $.get('head.html', function (response) {
         $('#head-placeholder').html(response);
     });
-     console.log("//loaded files...");
+console.log("//All files loaded succesfully...");
+
+//Useless Functions
 document.body.addEventListener("scroll", function(event) {
   var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
   var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
@@ -19,6 +22,7 @@ document.body.addEventListener("scroll", function(event) {
   document.documentElement.style.setProperty('--headerScale', scale);
 });
 
+//Theme Toggle
 function changeTheme(){
    const togle = document.getElementById("toggle");
    const themeA = document.getElementById("theme");
@@ -32,6 +36,8 @@ function changeTheme(){
     themeB.setAttribute("href" , './assets/css/responsive.css');
    }
 }
+
+//Scroll Functions
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -43,6 +49,8 @@ function changeTheme(){
       });
     }
   });
+
+//MenuBar Toggle
 var sn = document.getElementById("Snav");
 function dump(){
 	sn.style.left = "-120%";
