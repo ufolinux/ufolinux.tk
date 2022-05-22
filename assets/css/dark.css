@@ -6,13 +6,14 @@
     margin:0;
 }
 *::selection {
-  color: white;
+  color: black;
   background: none;
 }
 body{
 	display:block;
 	position:relative;
 	background: white;
+	overflow-x: hidden;
 	top:0;
 	left:0;
 	z-index:98;
@@ -27,12 +28,13 @@ body{
     height:7vh;
     width:100vw;
     box-sizing:border-box;
-    background: black;
+    background: white;
+	color: black;
     padding:0.1rem;
     z-index:99;
 }
 	.menuBar .Logo{
-		    display:inline-block;
+		    display:block;
 		    float:left;
 		    height:2.5rem;
 		    width:3.2rem;
@@ -43,7 +45,7 @@ body{
 			display:inline-block;
 			position:absolute;
 		    height:40px;
-		    color:red;
+		    color:black;
 		    font-size:2rem;
 		    font-stretch:ultra-expanded;
 		    transition:0.2s;
@@ -57,13 +59,13 @@ body{
 .Snav{
     display:block;
     position:fixed;
-    background:rgba(0,0,0,0.8);
-    color:white;
+    background:rgba(256,256,256,0.8);
+    color:black;
     height:100vh;
     width:100vw;
     top:7vh;
     left:-120%;
-    padding:20vh 0 2vh 0;
+    padding:10vh 0 2vh 0;
     text-align:center;
     transition:0.3s;
     z-index:98;
@@ -76,16 +78,18 @@ body{
 		    text-decoration:none;
 		    font-family:righteous;
 		    padding:1.5rem;
-		    color:white;
+		    color:black;
+	}
+	.nav:hover{
+		background: white;
 	}
 a{
 	transition:0.2s ease;
-	color:;
 }
 	a:hover{
 	    text-decoration:none;
-	    color:white;
-		background:black;
+	    color:black;
+		background:white;
 	}
 .container-contact{
 	display:flex;
@@ -130,7 +134,7 @@ a{
 	    height: 0.8vh;
 	    width: 5vw;
 	    border-radius: 5rem;
-	    top: 0.1rem;
+	    top: 0.05rem;
 	    left: 0.2rem;
 	    transition: 0.3s;
 	}
@@ -138,7 +142,7 @@ a{
 	    border-color: white;
 	}
 	#toggle:checked:after{
-	    left: 2rem;
+	    left: 4rem;
 	    background-color: white;
 	}
 .video-header {
@@ -150,6 +154,7 @@ a{
 	top:0; left:0;
 	z-index:97;
 	overflow-x: hidden;
+	cursor: crosshair;
   }
 	.viewport-header {
 		display:flex;
@@ -161,8 +166,8 @@ a{
 		left:0;
 		height:100vh;
 		width:100vw;
-		color:white;
-		background:rgba(0,0,0,0.3);
+		color:black;
+		background:rgba(255, 255, 255, 0.2);
 		z-index:97;
 	}
 	video{
@@ -176,7 +181,7 @@ a{
 	}
 	h1 {
 	  font-family: 'Syncopate', sans-serif;
-	  color: white;
+	  color: black;
 	  text-transform: uppercase;
 	  letter-spacing: 0.1vw;
 	  line-height: 1.6;
@@ -192,7 +197,7 @@ a{
 .footer {
 	display:block;
 	box-sizing:border-box;
-	background:black;
+	background:#191b1f;
 	color:white;
 	padding:4rem 1rem 1rem 1rem;
 	text-align:left;
@@ -226,18 +231,26 @@ a{
 	}
 	.footer a{
 		color:#9e0f05;
+		text-decoration:none;
 	}
 hr{
-	border-top:5px solid pink;
+	border-top:5px solid grey;
 	border-bottom:none;
 	border-right:none;
 	border-left:none;
+	width:90vw;
 }
 .blockA{
 	display:block;
 	padding:1rem;
 	text-align:left;
-	
+	color:black;
+}
+.c-slider{
+	display:flex;
+	justify-content:flex-start;
+	overflow-x:scroll;
+	width:100%;
 }
 	.blockA .c-a{
 		display:block;
@@ -250,9 +263,20 @@ hr{
 		line-height:1.3rem;
 		transition:0.2s ease;
 		box-shadow:0 5px 15px grey;
+		cursor: zoom-in;
 	}
+	.blockA h1{
+        font-size: 1.7rem;
+        width: 15vw;
+    }
 	.blockA .c-a:hover {
 		box-shadow:inset 0 -5px 15px grey;
+	}
+	.c-slider::-webkit-scrollbar{
+		background: none;
+	}
+	.c-slider::-webkit-scrollbar-thumb{
+		background:none;
 	}
 	.c-a img{
 		width:50vw;
@@ -268,10 +292,118 @@ hr{
 		font-size:1.5rem;
 		margin:0.5rem;
 		color:darkred;
-
 	}
-	
-*{
-	background:white;
+.blockA p{
+		letter-spacing:0.1rem;
+	}
+	.blockA p a{
+		color:#9e0f05;
+		text-decoration:none;
+	}
+.blockA hr{
+		width:20vw;
+		border:2px solid #9e0f05;
+		border-bottom:none;
+		margin-top:0.2rem;
+	}
+.blockE{
+	display:block;
+	text-align:left;
 	color:black;
+	margin:10vh 3vw;
 }
+	.blockE hr{
+		border-top:2px solid #9e0f05;
+	}
+	.blockE .m-a{
+		display:flex;
+		white-space: nowrap;
+		letter-spacing:0.1rem;
+		overflow-x:scroll;
+		background:silver;
+		padding:1rem 0.7rem;
+		margin:0.5rem;
+		font-size:0.8rem;
+		font-family:Courier new,monospace;
+		color:black;
+	}
+	.blockE .m-a::selection {
+	  color: black;
+	  background: lightblue;
+	  font-weight:700;
+	}
+	.blockE .m-a::-webkit-scrollbar{
+		width: 0.3rem;
+		height: 0.7rem;
+		background-color: grey; 
+		cursor: pointer;
+	}
+	.blockE .m-a::-webkit-scrollbar-thumb{
+		width: 0.1rem;
+		height: 0.1rem;
+		background-color: rgb(58, 43, 43);
+		border-radius: 10px;
+	}
+.blockD{
+	display:block;
+	text-align:left;
+	color:black;
+	margin:10vh 3vw;
+}
+	.blockD h2{
+		font-size:2.5rem;
+	}
+	.blockD hr{
+		border-top:2px solid #9e0f05;
+	}
+	.blockD a{
+		color:#9e0f05;
+		text-decoration:none;
+	}
+	.blockD .d-a{
+		letter-spacing:0.05rem;
+		line-height:1.5rem;
+	}
+	.blockD button{
+		display:block;
+		padding:0.7rem;
+		border:none;
+		outline:none;
+		border-radius:15px;
+		text-align:center;
+		font-size:1.1rem;
+		margin-top:1.2vh;
+		cursor: pointer;
+		background: black;
+		color: white;
+	}
+	.blockD button:hover{
+		background: rgb(48, 43, 43);
+		box-shadow: inset 0 0 15px grey;
+	}
+.particle{
+	display:block;
+	position:absolute;
+	height:2.5vh;
+	width:5vw;
+	background:darkred;
+	border-radius:0.5rem;
+}
+	.top-left{
+		top:10%;
+		left:15%;
+		animation:float1 1.5s linear infinite alternate-reverse;
+	}
+	.top-right{
+		top:30%;
+		right:5%;
+		animation:float2 1.2s linear infinite alternate-reverse;
+	}
+		@keyframes float1{
+			from{top:10%;}
+			to{top:11%;}
+		}
+		@keyframes float2{
+			from{top:30%;}
+			to{right:7%;}
+		}
