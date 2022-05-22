@@ -1,3 +1,4 @@
+console.log("loading...");
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
@@ -10,6 +11,7 @@ $.get("head.html", function(data){
 $.get('head.html', function (response) {
         $('#head-placeholder').html(response);
     });
+     console.log("//loaded files...");
 document.body.addEventListener("scroll", function(event) {
   var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
   var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
@@ -19,11 +21,15 @@ document.body.addEventListener("scroll", function(event) {
 
 function changeTheme(){
    const togle = document.getElementById("toggle");
+   const themeA = document.getElementById("theme");
+   const themeB = document.getElementById("themeR");
    if (togle.checked == true){
-		document.getElementById("theme").setAttribute("href" , 'dark.css');
+		themeA.setAttribute("href" , './assets/css/dark.css');
+    themeB.setAttribute("href" , './assets/css/responsive-dark.css');
    }
    else{
-		document.getElementById("theme").setAttribute("href" , 'style.css');
+		themeA.setAttribute("href" , './assets/css/style.css');
+    themeB.setAttribute("href" , './assets/css/responsive.css');
    }
 }
   $("a").on('click', function(event) {
@@ -31,8 +37,8 @@ function changeTheme(){
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 170
-      }, 400, function(){
+        scrollTop: $(hash).offset().top - 250
+      }, 0, function(){
         window.location.hash = hash;
       });
     }
