@@ -117,7 +117,7 @@ a{
     outline: none;
     height: 2.5vh;
     width: 20vw;
-    border: 0.3rem solid black;
+    border: 0.3rem solid white;
     border-radius: 5rem;
     position: fixed;
     margin: 4rem auto;
@@ -130,7 +130,7 @@ a{
 	    content: "";
 	    position: absolute;
 	    outline: none;
-	    background-color: black;
+	    background-color: white;
 	    height: 0.8vh;
 	    width: 5vw;
 	    border-radius: 5rem;
@@ -139,11 +139,11 @@ a{
 	    transition: 0.3s;
 	}
 	#toggle:checked{
-	    border-color: white;
+	    border-color: black;
 	}
 	#toggle:checked:after{
 	    left: 4rem;
-	    background-color: white;
+	    background-color: black;
 	}
 .video-header {
 	display:block;
