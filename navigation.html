@@ -1,5 +1,5 @@
 <div class="menuBar">
-	<a href="#"><img src="./assets/img/logo.png" class="Logo" alt="Ufo Linux Logo" ></a>
+	<a href="index.html#"><img src="./assets/img/logo.png" class="Logo" alt="Ufo Linux Logo" ></a>
 	<input value="&#9776;" type="text" class="menuIcon" id="menuIcon" onclick="pull()" onblur="dump()" readonly>
 		<div class="Snav" id="Snav">
 			<a href="index.html#home" class="nav"> Home </a>
@@ -17,11 +17,12 @@
 		</div>
 </div>
 <script>
+//MenuBar Toggle
 var sn = document.getElementById("Snav");
 function dump(){
-sn.style.left = "-120%";
+	sn.style.left = "-120%";
 }
 function pull(){
-sn.style.left = "0";
+	sn.style.left = "0";
 }
 </script>
