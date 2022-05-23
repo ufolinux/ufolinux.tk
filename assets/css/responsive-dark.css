@@ -63,7 +63,7 @@
 	    width: 3vw;
 	}
 	#toggle:checked:after{
-	    left: 4.5rem;
+	    left: 3rem;
 	}
 .video-header {
 	overflow: hidden;

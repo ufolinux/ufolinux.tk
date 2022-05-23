@@ -138,7 +138,7 @@ a{
 	    border-color: black;
 	}
 	#toggle:checked:after{
-	    left: 4rem;
+	    left: 3rem;
 	    background-color: black;
 	}
 .video-header {
