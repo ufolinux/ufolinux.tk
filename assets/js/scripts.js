@@ -27,13 +27,16 @@ function changeTheme(){
    const togle = document.getElementById("toggle");
    const themeA = document.getElementById("theme");
    const themeB = document.getElementById("themeR");
+   const themeC = document.getElementById("themeH");
    if (togle.checked == true){
 		themeA.setAttribute("href" , './assets/css/dark.css');
     themeB.setAttribute("href" , './assets/css/responsive-dark.css');
+    themeC.setAttribute("content" , '#fff');
    }
    else{
 		themeA.setAttribute("href" , './assets/css/style.css');
     themeB.setAttribute("href" , './assets/css/responsive.css');
+    themeC.setAttribute("content" , '#000');
    }
 }
 
