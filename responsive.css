@@ -1,0 +1,128 @@
+@media screen and (min-width: 650px) {
+    .MenuBar .menuIcon{
+        display: none;
+
+    }
+    .Snav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: right;
+        position: absolute;
+        background: none;
+        color: white;
+        height: 6vh;
+        width: 25vw;
+        top: 0;
+        left: 70vw;
+        right: 0;
+        padding: 0;
+        margin: 0.3rem;
+    }
+    .Snav .nav{
+        display:inline-block;
+        font-size:1rem;
+        text-decoration:none;
+        font-family:righteous;
+        padding:0.7rem;
+        color: white;
+    }
+    .Snav .nav:hover{
+        color: black;
+        background: white;
+        border-radius: 1.5rem;
+    }
+    .Snav hr{
+        border-color: black;
+        border-left: 0;
+    }
+    .container-contact{
+        display:none;
+    }
+    .particle{
+        width:1.5vw;
+    }
+        .top-left{
+            top:10%;
+            left:35%;
+        }
+        .top-right{
+            top:20%;
+            right:25%;
+        }
+            @keyframes float1{
+                from{top:10%;}
+                to{top:12%;}
+            }
+            @keyframes float2{
+                from{right:25%;}
+                to{right:26.5%;}
+            }
+    .a-a h1{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size:5rem;
+	letter-spacing: 0.5rem;
+    }
+    .a-a h4{
+        font-size:1.3rem;
+        margin: 0.3rem auto;
+    }
+    .a-a h5{
+        font-size:1.1rem;
+    }
+    .a-a .Logo{
+		height:9.5rem;
+		width:11.5rem;
+    }
+    .slider::-webkit-scrollbar{
+        background: none;
+    }
+    .products .setA , .setB{
+        margin: 2rem auto;
+    }
+    .section-main {
+        width:96vw;
+    }
+    .prompt{
+        padding: 7rem 10rem;
+        text-align: left;
+    }
+    .container-set #input-name {
+        width:25vw;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+        .container-set #input-name:hover{
+            width:27vw;
+        }
+    .container-set #input-submit {
+        width: 20vw;
+    }
+    .products .pct .slider{
+		justify-content:space-around;
+	}
+            .slider img {
+                width:15vw;
+                margin:0;
+            }
+        .products .setB .pct{
+            width: 20vw;
+        }
+        .products .setB .pct .slider{
+            width: 15vw;
+            justify-content: center;
+        }
+        .container-pro .slider img{
+		width:30vw;
+	}
+        .footer > p:first-of-type  {
+            font-size:0.8rem;
+            color: white;
+        }
+        .footer > p:last-of-type {
+            font-size:0.9rem;
+            color:silver;
+        }
+
+}
