@@ -36,9 +36,10 @@ body{
 		    display:block;
 		    float:left;
 		    height:2.5rem;
-		    width:3.2rem;
+		    width:2.5rem;
 		    border-radius:5px;
-		    margin:1%;
+		    margin:0.2rem;
+		    overflow:hidden;
 	}
 	.menuBar .menuIcon{
 			display:inline-block;
