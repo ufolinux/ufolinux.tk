@@ -30,7 +30,7 @@ body{
     box-sizing:border-box;
     background: white;
 	color: black;
-    padding:0.1rem;
+    padding:0.3rem 0.1rem 0.1rem 0.1rem;
     z-index:99;
 }
 	.menuBar .Logo{
@@ -41,20 +41,25 @@ body{
 		    border-radius:5px;
 		    margin:0.2rem;
 	}
-	.menuBar .menuIcon{
-			display:inline-block;
+	.menuBar .menuIcon , 	.menuBar #menuIcon{
+			display: flex;
+			justify-content:center; align-items:center;
 			position:absolute;
 		    height:40px;
-		    color:black;
 		    font-size:2rem;
 		    font-stretch:ultra-expanded;
 		    transition:0.2s;
-		    right:1rem;
+		    right:0.5rem;
 		    background:none;
 		    outline:none;
 		    border:none;
-			width:10vw;
+			width:60vw;
 			text-align:center;
+	}
+	.menuBar #menuIcon{
+		position:relative;
+		width:10vw;
+		color:black;
 	}
 .Snav{
     display:block;
@@ -110,8 +115,8 @@ a{
 		text-align:center;
 	}
 #toggle{
-	display:block;
-	position:fixed;
+	display: block;
+	position: relative;
    -webkit-appearance: none;
    -moz-appearance: none;
     outline: none;
@@ -119,10 +124,9 @@ a{
     width: 20vw;
     border: 0.3rem solid white;
     border-radius: 5rem;
-    position: fixed;
-    margin: 4rem auto;
-    top:0.5rem;
-    left: 0;
+   margin:0.5rem auto;
+   top: 0.2rem;
+   left: 0;
     right: 1.5rem;
     z-index:98;
 }
@@ -134,7 +138,7 @@ a{
 	    height: 0.8vh;
 	    width: 5vw;
 	    border-radius: 5rem;
-	    top: 0.05rem;
+	    top: 0.097rem;
 	    left: 0.2rem;
 	    transition: 0.3s;
 	}
