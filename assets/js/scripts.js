@@ -1,5 +1,5 @@
 //Loading data files
-console.log("loading...");
+console.log("//Loading Files...");
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
@@ -9,8 +9,9 @@ $.get("footer.html", function(data){
 $.get("head.html", function(data){
     $("#head-placeholder").replaceWith(data);
 });
-console.log("//All files loaded succesfully...");
+console.log("//All Files loaded succesfully...");
 
+/*
 //Theme Toggle
 function changeTheme(){
    const togle = document.getElementById("toggle");
@@ -33,6 +34,8 @@ function changeTheme(){
 	    console.log('77');
    }
 }
+
+
 //MenuBar Toggle
 var sn = document.getElementById("Snav");
 function dump(){
@@ -44,7 +47,7 @@ function pull(){
 
 
 //Useless Functions
-/*
+
 document.body.addEventListener("scroll", function(event) {
   var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
   var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;

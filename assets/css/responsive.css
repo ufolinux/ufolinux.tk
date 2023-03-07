@@ -7,8 +7,11 @@
                 width:3.8rem;
                 margin:0.2%;
         }
-        .menuBar .menuIcon{
+        .menuBar .menuIcon , .menuBar #menuIcon{
                 display:none;
+        }
+        .waveB{
+        	visibility:visible;
         }
     .Snav{
         display:flex;
