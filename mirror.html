@@ -20,9 +20,13 @@
 <div class="blockE">
 	<h2 style="color:lime"> Mirrorlist for official packages</h2><br><br>
 	<h4 style="color:gold;">Edit /etc/kepler.conf file and add these</h4><br><br>
-	<h2> Official </h2> <hr> <br><br>
+	<h2> Main official </h2> <hr> <br><br>
 	<div class="m-a">
 		[core]<br>
+Server = http://files.martinvlba.eu/ufo/$repo/packages/
+	</div><br>
+	<h2> Development </h2> <hr> <br><br>
+	<div class="m-a">
 Server = https://git.n64.cc/ufolinux/repository/$arch/$repo/-/raw/main/packages/
 <br><br><br>
 [extra]<br>
@@ -40,10 +44,6 @@ Server = https://git.n64.cc/ufolinux/repository/$arch/$repo/-/raw/main/packages/
 [python]<br>
 Server = https://git.n64.cc/ufolinux/repository/$arch/$repo/-/raw/main/packages/
 <br><br><br>
-	</div><br>
-	<h2> backup </h2> <hr> <br><br>
-	<div class="m-a">
-Server = http://files.martinvlba.eu/ufo/$repo/packages/
 	</div>
 </div><br>
 
