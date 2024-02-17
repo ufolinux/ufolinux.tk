@@ -5,10 +5,10 @@ import {useEffect, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation';
 
 export default function Home() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <main className="">
-      {router.push("/Home")}
+      {/* {router.push("/Home")} */}
     </main>
   );
 }
