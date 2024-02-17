@@ -28,12 +28,9 @@ const Page = () => {
         }
     }
 
-    useEffect(() => {
-        if (!ContentComponent || ContentComponent === "") {
-            router.push("/Home");
-        }
-    }, [ContentComponent, router]);
-
+    if (!ContentComponent || ContentComponent === "") {
+        ContentComponent = HomePage;
+    }
 
     return (
         <main className='h-screen w-screen overflow-x-hidden' >
