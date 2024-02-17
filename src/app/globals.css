@@ -46,10 +46,7 @@ body {
     color: orange;
     background: #ffffff26;
 }
-html{
-    overflow-x: hidden;
-    position: relative;
-}
+
 body {
     display: block;
     position: relative;
