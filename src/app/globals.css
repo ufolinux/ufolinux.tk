@@ -681,9 +681,9 @@ hr {
     line-height: 1.5rem;
 }
 
-.blockD button {
+.blockD a {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 0.5rem;
     padding: 0.7rem;
@@ -695,10 +695,11 @@ hr {
     margin-top: 1.2vh;
     cursor: pointer;
     background: white;
+    width: 10rem;
     color: black;
 }
 
-.blockD button:hover {
+.blockD a:hover {
     background: white;
     box-shadow: inset 0 0 15px grey;
 }
