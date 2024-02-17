@@ -1,7 +1,6 @@
 "use client"
 import { useRouter, usePathname } from 'next/navigation';
-import { useEffect } from 'react';
-
+import { useEffect, useState } from 'react';
 import HomePage from '../components/home/HomePage';
 import Contributors from '../components/contributors/Contributors';
 import Downloads from '../components/downloads/Downloads';
@@ -17,10 +16,9 @@ const Page = () => {
         Contributors: Contributors,
         Downloads: Downloads,
         Mirror: Mirror,
-    };
-
-    const page = usePathname();
-    const curPage = page.split('/')[1].toString();
+    }
+    const page = usePathname()
+    const curPage = page.split('/')[1].toString()
     var ContentComponent = "";
 
     for (const name in pagesFactory) {
@@ -36,13 +34,14 @@ const Page = () => {
         }
     }, [ContentComponent, router]);
 
+
     return (
         <main className='h-screen w-screen overflow-x-hidden' >
             <Navigation />
-            {ContentComponent && ContentComponent != "" && <ContentComponent />}
+            {ContentComponent && <ContentComponent />}
             <Footer />
         </main>
     );
-};
+}
 
 export default Page;
