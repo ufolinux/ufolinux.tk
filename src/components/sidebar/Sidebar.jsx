@@ -53,19 +53,19 @@ const Sidebar = ({ closeSidebar, sidebarVisible }) => {
                     </li>
 
                     <li className='text-center'>
-                        <NavLink to="/contributors" className={location.pathname.toLowerCase() === "/contributors" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <NavLink to="/contributors" className={location.pathname === "/contributors" ? 'text-red-400 underline underline-offset-8' : ''}>
                             Contributors
                         </NavLink>
                     </li>
 
                     <li className='text-center'>
-                        <NavLink to="/download" className={location.pathname.toLowerCase() === "/download" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <NavLink to="/download" className={location.pathname === "/download" ? 'text-red-400 underline underline-offset-8' : ''}>
                             Download
                         </NavLink>
                     </li>
 
                     <li className='text-center'>
-                        <NavLink to="/mirror" className={location.pathname.toLowerCase() === "/mirror" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <NavLink to="/mirror" className={location.pathname === "/mirror" ? 'text-red-400 underline underline-offset-8' : ''}>
                             Mirror list
                         </NavLink>
                     </li>

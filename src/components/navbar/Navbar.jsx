@@ -75,25 +75,25 @@ const Navbar = () => {
                             {/* </NavLink> */}
                         </li>
 
-                        <li className={location.pathname.toLowerCase() === "/contributors" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <li className={location.pathname === "/contributors" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <NavLink to="/contributors" >
                                 Contributors
                             </NavLink>
                         </li>
 
-                        <li className={location.pathname.toLowerCase() === "/download" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <li className={location.pathname === "/download" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <NavLink to="/download" >
                                 Download
                             </NavLink>
                         </li>
 
-                        <li className={location.pathname.toLowerCase() === "/mirror" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <li className={location.pathname === "/mirror" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <NavLink to="/mirror" >
                                 Mirror list
                             </NavLink>
                         </li>
 
-                        <li className={location.pathname.toLowerCase() === "#contact" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        <li className={location.pathname === "#contact" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <a href="#contact" >
                                 Contact Us
                             </a>
