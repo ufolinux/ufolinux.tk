@@ -93,11 +93,11 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
-                        <li className={location.pathname === "#contact" ? 'text-red-400 underline underline-offset-8' : ''}>
+                        {/* <li className={location.pathname === "#contact" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <a href="#contact" >
                                 Contact Us
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 
