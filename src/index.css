@@ -2,23 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-body, html{
+
+body,
+html {
   overflow-x: hidden;
+}
+
+body {
+  cursor: url('https://ufolinux.tk/images/loaders/0.webp'), url('https://ufolinux.tk/images/logos/scaledlogo.png'), auto;
 }
 
 html::-webkit-scrollbar {
   width: 10px;
 }
+
 html::-webkit-scrollbar-thumb {
-  background-color: #4B5563;
+  background-color: #f87171;
   border-radius: 10px;
 }
+
 html::-webkit-scrollbar-track {
   background-color: #1F2937;
+}
+
+.navLogo {
+  animation: glowingLogo 2.5s linear infinite alternate-reverse;
+}
+
+@keyframes glowingLogo {
+  0% {
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem red);
+  }
+
+  25% {
+    filter: drop-shadow(0.1rem 0.2rem 0.5rem blue);
+  }
+
+  50% {
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem orange);
+  }
+
+  100% {
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem purple);
+  }
+}
+
+
+.preloaderImg {
+  transform: translate(-1000%, -100%);
+  animation: teleport 3s ease-in-out 0.5s infinite alternate;
+}
+
+@keyframes teleport {
+  0% {
+    transform: translate(-800%, -100%);
+  }
+
+  10% {
+    transform: translate(-100%, -100%);
+  }
+
+  25% {
+    transform: translate(-100%, 100%);
+  }
+
+  50% {
+    transform: translate(100%, 100%);
+  }
+
+  75% {
+    transform: translate(100%, -100%);
+  }
+
+  100% {
+    transform: translate(3000%, -100%);
+  }
 }

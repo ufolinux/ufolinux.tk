@@ -46,16 +46,16 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='fixed z-50 w-screen h-[6vh] flex justify-between py-1 px-3 lg:px-7 shadow-md bg-black text-white'>
+            <nav className='fixed z-50 w-screen h-[6.5vh] flex justify-between py-2 px-3 lg:px-7 shadow-md bg-black text-white'>
                 {/* Logo */}
-                <NavLink to="/" className='flex justify-center w-fit lg:w-auto items-center gap-3 bg-gray-800 rounded-full px-3 pr-4'>
-                    <img className='w-[5vw] lg:w-[2vw] animate-pulse' src="/images/logos/scaledlogo.png" alt="ufolinux logo" />
-                    <p className='font-semibold text-orange-300'>UFO-LINUX</p>
+                <NavLink to="/" className='flex justify-center w-fit lg:w-auto items-center gap-2 rounded-full px-3 pr-4'>
+                    <img className='w-[5vw] lg:w-[2vw] navLogo' src="/images/logos/scaledlogo.png" alt="ufolinux logo" />
+                    <p className='font-semibold text-orange-300 navLogo'>UFO-LINUX</p>
                 </NavLink>
 
                 {/* Navlinks */}
                 <div className="font-semibold text-lg px-3 text-center hidden lg:flex justify-center items-center">
-                    <ul className='w-full flex justify-center items-center gap-7 *:text-center'>
+                    <ul className='w-full flex justify-center items-center gap-7 *:text-center hover:*:text-red-400'>
                         <li className={location.pathname === "/" ? 'text-red-400 underline underline-offset-8' : ''}>
                             <NavLink to="/">Home</NavLink>
                         </li>

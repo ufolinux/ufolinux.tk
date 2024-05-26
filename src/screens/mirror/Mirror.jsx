@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 import Code from '../../components/ui/Code';
 
 const Mirror = () => {
+  const [imgSrc, setImgSrc] = useState('/images/loaders/9.webp');
+
+  useEffect(()=>{
+      const randomNumber = Math.floor(Math.random() * 12);
+      setImgSrc(`/images/loaders/${randomNumber}.webp`);
+  },[])
 
   return (
     <>
       <Navbar />
 
       <div className='p-4 bg-black text-white py-14 h-full pb-24'>
-        <img className=' size-60 m-auto animate-pulse my-12' src="/images/loaders/9.webp" alt="download ufolinux" />
+        <img className=' size-60 m-auto animate-pulse my-12' src={imgSrc} alt="download ufolinux" />
         <h2 className='flex items-center gap-2 text-2xl lg:text-3xl font-extrabold my-8'>Mirrorlist for official packages</h2>
         <h3 className='text-lg lg:text-xl my-3 text-yellow-300'>Edit /etc/kepler.conf file and add these</h3>
 
