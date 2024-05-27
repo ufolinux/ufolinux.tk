@@ -16,9 +16,9 @@ const Contributors = () => {
         <div className='flex flex-col gap-3 lg:gap-0 lg:flex-row items-center justify-around my-8'>
 
           <ProfileCard name={"Navjot Singh (Cybersecbyte)"} role={"Project founder"} image={"contributorA.jpg"} github='cybersecbyte' telegram='cybersecbyte' />
-          <ProfileCard name={"H@x"} role={"Repo Hosting"} image={"contributorB.jpg"} telegram='h_2_o0' />
-          <ProfileCard name={"Martin Valba"} role={"Maintainer"} image={"contributorC.jpg"} telegram='hilledkinged' />
-          <ProfileCard name={"Naman Saini"} role={"Web Developer"} image={"contributorD.jpg"} github='realpxd' linkedin='programmerxd' website='programmerxd.vercel.app' x='dotpxd' />
+          <ProfileCard name={"Stefan Kuny (H@x)"} role={"Repo Hosting"} image={"contributorB.jpg"} telegram='h_2_o0' />
+          <ProfileCard name={"Martin Valba (HilledKinged)"} role={"Maintainer"} image={"contributorC.jpg"} telegram='hilledkinged' />
+          <ProfileCard name={"Naman Saini (Realpxd)"} role={"Web Developer"} image={"contributorD.jpg"} github='realpxd' linkedin='programmerxd' website='programmerxd.vercel.app' x='dotpxd' />
         </div>
       </div>
 

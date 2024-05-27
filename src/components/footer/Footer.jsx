@@ -25,7 +25,7 @@ const Footer = () => {
             <hr className='border-gray-400 my-8' />
             <div className='flex flex-col gap-3 font-semibold text-sm lg:text-lg'>
                 <p>Developed by
-                    <a className='text-red-500' href="https://github.com/cybersecbyte"> Cybersecbyte</a>
+                    <a className='text-red-500' href="https://cybersecbyte.tk"> Cybersecbyte</a>
                 </p>
                 <p>Ufo Linux® is a registered trademark of Cybersecbyte.</p>
                 <p>Linux® is a registered trademark of Linus Torvalds in the United States and other countries.</p>
