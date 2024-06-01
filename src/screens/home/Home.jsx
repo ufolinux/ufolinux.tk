@@ -32,7 +32,7 @@ function Home() {
         <> {
             isPreloaderActive ?
                 < div className='absolute w-screen h-screen self-center top-0 left-0 duration-75 overflow-hidden bg-black z-50' >
-                    <img className='preloaderImg mt-[20rem] mb-[4rem] mx-auto h-[5rem] w-[5rem]' src={imgSrc} alt="Loading.." />
+                    <img className='preloaderImg mt-[20rem] mb-[4rem] mx-auto h-[5rem] w-[5rem]' src={imgSrc} alt="jetpack" />
                 </div >
                 :
                 <>

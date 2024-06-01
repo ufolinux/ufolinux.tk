@@ -17,7 +17,7 @@ const Download = () => {
         <>
             <Navbar />
             <div className='p-4 bg-black text-white py-14 h-full pb-24'>
-                <img className=' size-60 m-auto animate-bounce my-12' src={imgSrc} alt="download ufolinux" />
+                <img className=' size-60 m-auto animate-bounce my-12' src={imgSrc} alt="astronaut" />
                 <h2 className='flex items-center gap-2 text-2xl lg:text-3xl font-extrabold my-8'>Download UFO LINUX - Smooth & Reliable <PiCoffeeFill className='size-20 animate-pulse lg:size-auto cursor-pointer' /></h2>
                 <h3 className='text-lg lg:text-xl my-3'>You can download the first release of live iso from below
                     Live ISO</h3>
