@@ -16,7 +16,7 @@ const Mirror = () => {
       <Navbar />
 
       <div className='p-4 bg-black text-white py-14 h-full pb-24'>
-        <img className=' size-60 m-auto animate-pulse my-12' src={imgSrc} alt="download ufolinux" />
+        <img className=' size-60 m-auto animate-pulse my-12' src={imgSrc} alt="astronaut" />
         <h2 className='flex items-center gap-2 text-2xl lg:text-3xl font-extrabold my-8'>Mirrorlist for official packages</h2>
         <h3 className='text-lg lg:text-xl my-3 text-yellow-300'>Edit /etc/kepler.conf file and add these</h3>
 
