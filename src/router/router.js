@@ -3,6 +3,7 @@ import Home from '../screens/home/Home.jsx';
 import Download from '../screens/download/Download.jsx';
 import Contributors from '../screens/contributors/Contributors.jsx';
 import Mirror from '../screens/mirror/Mirror.jsx';
+import EasterEgg from '../screens/easteregg/EasterEgg.jsx';
 
 const router = createHashRouter([
     {
@@ -21,6 +22,10 @@ const router = createHashRouter([
         path: "/contributors",
         element: <Contributors />
     },
+    {
+        path: "*",
+        element: <EasterEgg />
+    }
 ]);
 
 export default router;
