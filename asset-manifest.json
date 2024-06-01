@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://ufolinux.tk/static/css/main.8b93ff5e.css",
-    "main.js": "https://ufolinux.tk/static/js/main.6f3a42db.js",
+    "main.css": "https://ufolinux.tk/static/css/main.45a12ead.css",
+    "main.js": "https://ufolinux.tk/static/js/main.6210ed25.js",
     "index.html": "https://ufolinux.tk/index.html",
-    "main.8b93ff5e.css.map": "https://ufolinux.tk/static/css/main.8b93ff5e.css.map",
-    "main.6f3a42db.js.map": "https://ufolinux.tk/static/js/main.6f3a42db.js.map"
+    "main.45a12ead.css.map": "https://ufolinux.tk/static/css/main.45a12ead.css.map",
+    "main.6210ed25.js.map": "https://ufolinux.tk/static/js/main.6210ed25.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b93ff5e.css",
-    "static/js/main.6f3a42db.js"
+    "static/css/main.45a12ead.css",
+    "static/js/main.6210ed25.js"
   ]
 }
