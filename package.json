@@ -25,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "cross-env PUBLIC_URL=https://ufolinux.tk/ npm run build",
-    "deploy": "gh-pages -b build-branch -d build"
+    "deploy": "gh-pages -b build-branch -d build",
+    "deploy:ci": "CI=false gh-pages -b build-branch -d build"
   },
   "eslintConfig": {
     "extends": [
