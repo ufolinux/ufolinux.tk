@@ -3,7 +3,7 @@ import { IoIosCloudDownload } from "react-icons/io";
 import { PiCoffeeFill } from "react-icons/pi";
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Download = () => {
     const [imgSrc, setImgSrc] = useState('/images/loaders/5.webp');

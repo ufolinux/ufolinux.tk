@@ -30,4 +30,5 @@ jobs:
     - name: Run deploy script
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-      run: npm run deploy
+        CI: ''
+      run: npm run deploy:ci

@@ -2,7 +2,7 @@ import React from 'react'
 
 const EasterEgg = () => {
   return (
-    <iframe src="https://realpxd.github.io/konga/" frameborder="0" className='h-screen w-screen' />
+    <iframe src="https://realpxd.github.io/konga/" title='easter egg' frameborder="0" className='h-screen w-screen' />
   )
 }
 
